@@ -11,11 +11,16 @@ public class StringOperation {
     
     public init() {}
     
+    
     public func revereString(_ str: String) -> String {
         var reverse = ""
         for eachCharacter in str {
             reverse = String(eachCharacter) + reverse
         }
         return reverse
+    }
+    
+    public func ouput() -> {
+        return "Testing"
     }
 }
