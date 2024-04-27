@@ -1,5 +1,5 @@
 import XCTest
-@testable import DataStructuresPackage
+//@testable import DataStructuresPackage
 
 final class DataStructuresPackageTests: XCTestCase {
     func testExample() throws {
