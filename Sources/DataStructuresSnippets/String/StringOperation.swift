@@ -42,14 +42,13 @@ public class StringOperation {
         func backTrack(_ start: Int) {
             if tuple.count == combinationSize {
                 resultsCombo.append(tuple)
+                return
             }
-            return
-        }
-        
-        for i in nums {
-            tuple.append(nums[i])
-            backTrack(i+1)
-            tuple.removeLast()
+            for i in start..<nums.count {
+                tuple.append(nums[i])
+                backTrack(i+1)
+                tuple.removeLast()
+            }
         }
         
         backTrack(0)
