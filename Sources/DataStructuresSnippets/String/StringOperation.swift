@@ -22,8 +22,11 @@ public class StringOperation {
     
     public func isPallindrome(_ txt: String) -> Bool{
         let count = txt.count
+        let caseInsensitiveText = txt.lowercased()
         for i in 0..<count/2 {
-            if txt.index(txt.startIndex, offsetBy: i) != txt.index(txt.endIndex, offsetBy: -i - 1) {
+            let start = caseInsensitiveText.index(caseInsensitiveText.startIndex, offsetBy: i)
+            let end = caseInsensitiveText.index(caseInsensitiveText.endIndex, offsetBy: -i - 1)
+            if caseInsensitiveText[start] != caseInsensitiveText[end] {
                 return false
             }
                 
