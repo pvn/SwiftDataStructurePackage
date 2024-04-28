@@ -34,7 +34,7 @@ public class LinkedList<T> {
     Output: 0
     Explanation: In this case, no transaction is done, i.e. max profit = 0.*/
     
-    func maxProfit(_ prices: [Int]) -> Int {
+    public func maxProfit(_ prices: [Int]) -> Int {
         
         if prices.count < 2 {
             return 0
