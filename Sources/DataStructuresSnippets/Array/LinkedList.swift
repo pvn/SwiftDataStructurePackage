@@ -48,7 +48,7 @@ public class LinkedList<T> {
         
         for price in prices {
             firstBuy = min(firstBuy, price)
-            firstProfit = max(firstProfit,n price - firstBuy)
+            firstProfit = max(firstProfit, price - firstBuy)
             
             secondBuy = min(secondBuy, price - firstProfit)
             secondProfit = max(secondProfit, price - secondBuy)
